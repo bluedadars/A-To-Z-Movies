@@ -28,28 +28,29 @@ function MovieDetails() {
   };
 
   return (
-    <div className="bg-gray-100 min-h-screen">
-      <div className="container mx-auto px-4 py-8">
+    <div className=" min-h-screen">
+      <div className="container mx-auto px-4 py-8 ">
         {movie ? (
           <div>
             <h2 className="text-2xl font-semibold mb-4">{movie.title}</h2>
-            <div className="flex">
+            <div className="">
               <img
+              
                 src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
                 alt={movie.title}
-                className="h-64 w-48 object-cover mr-4"
+                className="h-[500px] w-[1200px] object-center items-center justify-center object-contain mr-4"
               />
               <div>
-                <p className="text-gray-500 mb-2">
+                <p className="text-red-600 mb-2 mt-4">
                   Release Date: {movie.release_date}
                 </p>
-                <p className="text-gray-500 mb-2">
+                <p className="text-green-600 mb-2">
                   Average Rating: {movie.vote_average}
                 </p>
-                <p className="text-gray-500 mb-2">Overview: {movie.overview}</p>
+                <p className="text-white mb-2">Overview: {movie.overview}</p>
                 {movie.download_links && movie.download_links.length > 0 ? (
                   <div>
-                    <p className="font-semibold mb-2">Download Links:</p>
+                    <p className="font-semibold text-white mb-2">Download Links:</p>
                     <ul>
                       {movie.download_links.map((link, index) => (
                         <li key={index}>
@@ -64,7 +65,7 @@ function MovieDetails() {
                     </ul>
                   </div>
                 ) : (
-                  <p>No download links available.</p>
+                  <p className='text-red-800'>No download links available.</p>
                 )}
               </div>
             </div>

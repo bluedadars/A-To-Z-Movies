@@ -1,10 +1,15 @@
 .App {
   text-align: center;
 }
-
+body{
+  background-image: url(Images/BG-4.jpg);
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+body{
+  background-image: url(Images/BG-4.jpg);
 }
 
 @media (prefers-reduced-motion: no-preference) {

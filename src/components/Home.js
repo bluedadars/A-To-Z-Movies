@@ -25,12 +25,15 @@ function Home() {
   };
 
   return (
-    <div className="bg-gray-100 min-h-screen">
-      <header className="py-3 bg-blue-500 shadow items-center">
+    <div className='min-h-screen'>
+      <header className="py-3 bg-gradient-to-r from-purple-600 via-blue-700 to-purple-600 shadow items-center">
         <div className="container flex flex-row space-x-32  content-center mx-auto px-4">
-          <h1 className="text-medium font-semibold text-white">AZ & Movies</h1>
-          <div className='hidden md:block'>
-          <ul className='flex space-x-4 text-white'>
+          <h1 className="text-medium flex  items-center font-semibold text-white">AZK Movies
+          <img width={'50px'} height={'50px'} className='mx-2' src='Images/R.png'/>
+          </h1>
+          
+          <div className='hidden md:block text-left'>
+          <ul className='flex space-x-12 p-2 mx-3 text-white'>
             <li className='hover:underline hover:underline-offset-2'>Home</li>
             <li className='hover:underline hover:underline-offset-2'>Hindi Movies</li>
             <li className='hover:underline hover:underline-offset-2'>Hindi Dubbed Movies</li>
